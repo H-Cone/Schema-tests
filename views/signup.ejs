@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form action="/dashboard" method="post">
+            <div>
+                <label for="">First name</label>
+                <input type="text" name="firstName" id="">
+            </div>
+
+            <div>
+                <label for="">Last name</label>
+                <input type="text" name="lastName" id="">
+            </div>
+
+            <div>
+                <label for="">email</label>
+                <input type="email" name="email" id="">
+            </div>
+
+            <div>
+                <label for="">age</label>
+                <input type="number" name="age" id="">
+            </div>
+
+            <div>
+                <label for="">Phone Number</label>
+                <input type="tel" name="phoneNum" id="">
+            </div>
+
+            <div>
+                <label for="">Gender</label>
+                <select name="gender" id="">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="">Password</label>
+                <input type="password" name="password" id="">
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <form action="/dbuser" method="post">
+            <input type="text" name="searchInput">
+            <button type="submit">Submit</button>
+        </form>
+
+            <form action="/findbyid" method="post">
+            <input type="text" name="searchEngine">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
