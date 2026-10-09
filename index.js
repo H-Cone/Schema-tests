@@ -27,9 +27,9 @@ app.post('/dashboard', dashboard)
 
 app.post('/dbuser', findOne)
 
-app.get('/editform', editForm)
+app.get('/editform/:id', editForm)
 
-app.post('/edit', edit)
+app.post('/edit/:id', edit)
 
 app.post('/delete/:id', deleteInput)
 

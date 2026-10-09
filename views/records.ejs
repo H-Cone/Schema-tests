@@ -43,13 +43,16 @@
                     <td><%= people.verificationStatus %></td>
 
                     <td>
+                        <div style="display: flex; gap: 5px;">
+                            <form action="/delete/<%= people._id %>" method="post">
 
-                        <form action="/delete/<%= people._id %>" method="post">
-
-                            <button>Delete</button>
+                            <button class="btn btn-danger">Delete</button>
 
                         </form>
+
+                        <a href="/editform/<%= people._id %>" class="btn btn-primary">Edit</a>
                         
+                    </div>
                     </td>
                 </tr>
 
