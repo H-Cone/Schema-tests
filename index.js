@@ -1,8 +1,9 @@
 const express = require('express')
 const app = express();
 const mongoose = require('mongoose')
+const bcrypt = require('bcryptjs')
 const userModel = require('./models/user.model');
-const { dashboard } = require('./controllers/dashboard.controller');
+const { dashboard, login, loginn } = require('./controllers/dashboard.controller');
 const { signup } = require('./controllers/authentication.controller');
 const { edit, editForm } = require('./controllers/edit.controller');
 const { deleteInput } = require('./controllers/delete.controller');
@@ -21,9 +22,7 @@ app.set("view engine", "ejs");
 app.use(express.urlencoded({extended: true}))
 
 
-app.use('/auth', userRoute)
-
-app.post('/dashboard', dashboard)
+app.use('/auth', userRoute)   
 
 app.post('/dbuser', findOne)
 
